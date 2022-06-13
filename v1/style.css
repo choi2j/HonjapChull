@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* {
+    font-family: 'pretendard';
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column
+}
+
+.today {
+    margin: 50px 0;
+    font-size: 24px;
+    font-weight: 200;
+    color: #797b83;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dateSelect {
+    display: flex;
+    width: 60%;
+    height: 50px;
+    background-color: #f2f0f0;
+    max-width: 600px;
+    overflow: auto;
+    min-width: 290px;
+    border-radius: 20px;
+}
+
+.dateSelect button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #707070;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dateSelect button:focus {
+    background-color: #325eef;
+    color: white;
+}
+
+.selection-2 {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    max-width: 600px;
+    min-width: 290px;
+}
+
+.timeSelect,
+.lineSelect,
+.stationSelect {
+    background-color: #f2f0f0;
+    border: none;
+    border-radius: 20px;
+    color: #707070;
+    font-weight: 300;
+}
+
+.timeSelect {
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.lineSelect {
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.stationSelect {
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.cgsText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    background-color: #f2f0f0;
+    border-radius: 20px;
+}
+
+.cgsIs {
+    display: flex;
+    flex-direction: column;
+    color: #707070;
+    font-weight: 300;
+}
+
+.cgsIs p {
+    margin: 5px 0;
+}
+
+.cgsIs span {
+    color: #325eef;
+}
+
+.cgsType {
+    font-size: 32px;
+    margin-left: 10%;
+    font-weight: 600;
+}
+
+.cgsGraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #f2f0f0;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.cgsGraph-container {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 90%;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.cgsGraph-graph {
+    background-color: white;
+    width: 30px;
+    height: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+.cgsGraph-container p {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+    min-width: 40px;
+    width: 100%;
+}

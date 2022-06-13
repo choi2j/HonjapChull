@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/v1/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="today">
+            <span>Today 0/0 Mon</span>
+        </div>
+        <div class="selection">
+            <div class="dateSelect">
+                <button>12</button>
+            </div>
+            <div class="selection-2">
+                <input type="time" class="timeSelect" name="" id="">
+                <select class="lineSelect" name="" id="">
+                    <option value=""></option>
+                </select>
+                <select class="stationSelect" name="" id="">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="cgsText">
+            <div class="cgsIs">
+                <p class="cgsStatus"><span>약 23명</span>이 있어요</p>
+                <p class="cgsStation">지금 <span>서울역</span>은</p>
+            </div>
+            <p class="cgsType">"여유"</p>
+        </div>
+        <div class="cgsGraph">
+            <div class="cgsGraph-container">
+                <div class="cgsGraph-graph"></div>
+                <p class="cgsGrapn-time">
+                    7 : 00
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const timeSpan = document.querySelector(".today span");
+
+        let time = new Date;
+        let month = time.getMonth();
+        let date = time.getDate();
+        let day = time.getDay();
+
+        let dateArr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let dayText;
+
+        timeSpan.innerHTML = `Today ${month}/${date} ${dateArr[day]}`;
+    </script>
+</body>
+
+</html>
