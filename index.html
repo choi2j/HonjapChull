@@ -57,6 +57,20 @@
         let dayText;
 
         timeSpan.innerHTML = `Today ${month}/${date} ${dateArr[day]}`;
+
+        let cgsPeople = 1000;
+        let cgsType = document.querySelector(".cgsText .cgsType");
+        let cgsStatus = document.querySelector(".cgsIs .cgsStatus");
+        let cgsStation = document.querySelector(".cgsIs .cgsStation");
+        cgsStatus.innerHTML = `<span style=\"color: #325eef;\">약 ${cgsPeople}명</span>이 있어요`;
+
+        if (cgsPeople > 2000) {
+            cgsType.innerHTML = "<span style=\"color: #efd232;\">\"혼잡\"";
+        } else if (cgsPeople <= 2000 && cgsPeople > 1000) {
+            cgsType.innerHTML = "<span style=\"color: #325eef;\">\"보통\"";
+        } else if (cgsPeople <= 1000) {
+            cgsType.innerHTML = "<span style=\"color: #32ef82;\">\"여유\"";
+        }
     </script>
 </body>
 
